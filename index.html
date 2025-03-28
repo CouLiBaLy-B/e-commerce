@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuscleFit CI - Protéines & Équipements de Musculation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#accueil">Muscle<span>Fit</span> CI</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#avantages">Avantages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="cart-icon"><a href="#"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Votre partenaire fitness en Côte d'Ivoire</h1>
+                <p>Protéines de qualité et équipements professionnels pour atteindre vos objectifs</p>
+                <a href="#produits" class="btn">Découvrir nos produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits" class="products">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Tous</button>
+                <button class="category-btn" data-category="proteines">Protéines</button>
+                <button class="category-btn" data-category="equipements">Équipements</button>
+                <button class="category-btn" data-category="accessoires">Accessoires</button>
+            </div>
+            <div class="product-grid">
+                <!-- Produit 1 -->
+                <div class="product-card" data-category="proteines">
+                    <img src="images/proteine-whey.jpg" alt="Protéine Whey">
+                    <h3>Whey Protein Premium</h3>
+                    <p class="price">25,000 FCFA</p>
+                    <p class="description">Protéine de lactosérum de haute qualité pour une récupération optimale</p>
+                    <button class="add-to-cart" data-id="1">Ajouter au panier</button>
+                </div>
+                
+                <!-- Produit 2 -->
+                <div class="product-card" data-category="proteines">
+                    <img src="images/proteine-vegan.jpg" alt="Protéine Vegan">
+                    <h3>Protéine Vegan</h3>
+                    <p class="price">28,000 FCFA</p>
+                    <p class="description">Protéine végétale à base de pois et de riz pour les régimes végétariens</p>
+                    <button class="add-to-cart" data-id="2">Ajouter au panier</button>
+                </div>
+                
+                <!-- Produit 3 -->
+                <div class="product-card" data-category="equipements">
+                    <img src="images/halteres.jpg" alt="Haltères ajustables">
+                    <h3>Haltères ajustables</h3>
+                    <p class="price">75,000 FCFA</p>
+                    <p class="description">Paire d'haltères ajustables de 5kg à 25kg</p>
+                    <button class="add-to-cart" data-id="3">Ajouter au panier</button>
+                </div>
+                
+                <!-- Produit 4 -->
+                <div class="product-card" data-category="equipements">
+                    <img src="images/bench-press.jpg" alt="Banc de musculation">
+                    <h3>Banc de musculation</h3>
+                    <p class="price">120,000 FCFA</p>
+                    <p class="description">Banc inclinable multifonction pour un entraînement complet</p>
+                    <button class="add-to-cart" data-id="4">Ajouter au panier</button>
+                </div>
+                
+                <!-- Produit 5 -->
+                <div class="product-card" data-category="accessoires">
+                    <img src="images/gants.jpg" alt="Gants de musculation">
+                    <h3>Gants de musculation</h3>
+                    <p class="price">8,000 FCFA</p>
+                    <p class="description">Gants rembourrés pour une meilleure prise et protection</p>
+                    <button class="add-to-cart" data-id="5">Ajouter au panier</button>
+                </div>
+                
+                <!-- Produit 6 -->
+                <div class="product-card" data-category="accessoires">
+                    <img src="images/ceinture.jpg" alt="Ceinture de musculation">
+                    <h3>Ceinture de musculation</h3>
+                    <p class="price">15,000 FCFA</p>
+                    <p class="description">Ceinture de soutien lombaire pour les exercices lourds</p>
+                    <button class="add-to-cart" data-id="6">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos de MuscleFit CI</h2>
+                    <p>Fondée en 2020 à Abidjan, MuscleFit CI est devenue la référence en Côte d'Ivoire pour les produits de musculation et de fitness de qualité.</p>
+                    <p>Nous nous engageons à fournir à nos clients des produits authentiques, testés et approuvés par des professionnels du fitness.</p>
+                    <p>Notre équipe est composée d'anciens athlètes et de passionnés de fitness qui comprennent vos besoins et peuvent vous conseiller.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>5000+</h3>
+                            <p>Clients satisfaits</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>Produits disponibles</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5</h3>
+                            <p>Villes desservies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="Équipe MuscleFit CI">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avantages -->
+    <section id="avantages" class="benefits">
+        <div class="container">
+            <h2>Pourquoi choisir MuscleFit CI?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Produits certifiés</h3>
+                    <p>Tous nos produits sont authentiques et proviennent de fournisseurs agréés.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Livraison rapide</h3>
+                    <p>Livraison en 24h à Abidjan et 72h dans les autres villes principales.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garantie satisfait</h3>
+                    <p>7 jours pour changer d'avis ou être remboursé.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Support client</h3>
+                    <p>Notre équipe est disponible 7j/7 pour répondre à vos questions.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Paiement sécurisé</h3>
+                    <p>Paiement en ligne sécurisé ou à la livraison.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Programme fidélité</h3>
+                    <p>Gagnez des points à chaque achat et bénéficiez de réductions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Témoignages de nos clients</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"Les protéines MuscleFit m'ont aidé à atteindre mes objectifs de prise de masse en seulement 3 mois. Qualité exceptionnelle!"</p>
+                    <div class="client">
+                        <img src="images/client1.jpg" alt="Client 1">
+                        <div>
+                            <h4>Jean Koffi</h4>
+                            <p>Abidjan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Service client impeccable et livraison ultra rapide. Je recommande vivement MuscleFit CI à tous les sportifs ivoiriens."</p>
+                    <div class="client">
+                        <img src="images/client2.jpg" alt="Client 2">
+                        <div>
+                            <h4>Aïcha Traoré</h4>
+                            <p>Bouaké</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Le banc de musculation est solide et très fonctionnel. Exactement ce dont j'avais besoin pour mon home gym."</p>
+                    <div class="client">
+                        <img src="images/client3.jpg" alt="Client 3">
+                        <div>
+                            <h4>Marc Yao</h4>
+                            <p>Yamoussoukro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Rue des Sportifs, Cocody<br>Abidjan, Côte d'Ivoire</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+225 07 08 09 10 11</p>
+                            <p>+225 27 22 20 21 22</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@musclefitci.com</p>
+                            <p>ventes@musclefitci.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Heures d'ouverture</h3>
+                            <p>Lundi - Vendredi: 8h - 18h</p>
+                            <p>Samedi: 9h - 15h</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>MuscleFit CI</h3>
+                    <p>Votre partenaire fitness en Côte d'Ivoire pour des produits de qualité et un service exceptionnel.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#a-propos">À Propos</a></li>
+                        <li><a href="#avantages">Avantages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Catégories</h3>
+                    <ul>
+                        <li><a href="#produits">Protéines</a></li>
+                        <li><a href="#produits">Équipements</a></li>
+                        <li><a href="#produits">Accessoires</a></li>
+                        <li><a href="#produits">Promotions</a></li>
+                        <li><a href="#produits">Nouveautés</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Abonnez-vous pour recevoir nos offres spéciales.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MuscleFit CI. Tous droits réservés.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Panier flottant -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Les articles du panier seront ajoutés ici dynamiquement -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span class="total-amount">0 FCFA</span></p>
+            <button class="checkout-btn">Passer la commande</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
